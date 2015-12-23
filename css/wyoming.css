@@ -1,0 +1,53 @@
+button, img, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.wyoming-container {
+    display: block;
+    width: 480px;
+    height: 600px;
+    background-color: rgba(255, 0, 0, .5);
+}
+.wyoming-slide,
+.wyoming-slide1,
+.wyoming-slide2,
+.wyoming-slide3,
+.wyoming-slide4,
+.wyoming-slide5 {
+    position: relative;
+    width: 320px;
+    height: 600px;
+}
+.wyoming-slide {
+    float: left;
+    background-color: rgba(0, 255, 0, .5);
+}
+.wyoming-slide1 {
+    z-index: 1;
+}
+.wyoming-slide2 {
+    z-index: 2;
+}
+.wyoming-slide3 {
+    z-index: 3;
+}
+.wyoming-slide4 {,
+z-index: 4;
+}
+.wyoming-slide5 {
+    z-index: 5;
+}
+
+.wyoming-control {
+    float: left;
+    list-style-type: none;
+    width: 160px;
+    height: 600px;
+    background-color: rgba(0, 0, 255, .5);
+}
+.wyoming-button {
+    list-style-type: none;
+    width: 160px;
+    height: 38px;
+}
