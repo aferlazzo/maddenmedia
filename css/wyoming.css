@@ -1,53 +1,172 @@
+body {
+    margin:0;
+    padding: 0;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+.main_wrapper {
+    width: 100%;
+}
+.intro {
+    width: 400px;
+    float: left;
+}
+.intro h1, 
+.intro h4 {
+    text-align: center;
+}
+.intro p {
+    margin: 0 0 10px 10px;
+}
+.ad_sample {
+    float: left;
+}
+.wyoming_container {
+    display: block;
+    width: 480px;
+    height: 600px;
+    background-color: red;
+}
 button, img, ul, li {
     margin: 0;
     padding: 0;
     border: 0;
 }
-.wyoming-container {
-    display: block;
-    width: 480px;
-    height: 600px;
-    background-color: rgba(255, 0, 0, .5);
+button {
+    background-color: transparent;
 }
-.wyoming-slide,
-.wyoming-slide1,
-.wyoming-slide2,
-.wyoming-slide3,
-.wyoming-slide4,
-.wyoming-slide5 {
-    position: relative;
+button:hover {
+    cursor: pointer;
+}
+.wyoming_slides,
+#ad_ski_slide,
+#ad_lodges_slide,
+#ad_accommodations_slide,
+#ad_snowmobiling_slide,
+#ad_winter_slide {
+    position: absolute;
     width: 320px;
     height: 600px;
+    background: #212852;
+    background: -moz-linear-gradient(-45deg,  #212852 0%, #506bad 100%);
+    background: -webkit-linear-gradient(-45deg,  #212852 0%,#506bad 100%);
+    background: linear-gradient(135deg,  #212852 0%,#506bad 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212852', endColorstr='#506bad',GradientType=1 );
+    box-shadow: inset 0 0 2px 1px #363542;
 }
-.wyoming-slide {
+.wyoming_slides {
     float: left;
-    background-color: rgba(0, 255, 0, .5);
+    position: relative;
 }
-.wyoming-slide1 {
+.wyoming_slides a,
+.wyoming_slides div {
+    color: #fff;
+}
+#ad_ski_slide {
+    overflow: hidden;
     z-index: 1;
+    left: 320px;
+    top: 0;
+    width: 0;
 }
-.wyoming-slide2 {
+#ad_lodges_slide {
+    overflow: hidden;
     z-index: 2;
+    left: 320px;
+    top: 0;
+    width: 0;
 }
-.wyoming-slide3 {
+#ad_accommodations_slide {
+    overflow: hidden;
     z-index: 3;
+    left: 320px;
+    top: 0;
+    width: 0;
 }
-.wyoming-slide4 {,
-z-index: 4;
+#ad_snowmobiling_slide {
+    overflow: hidden;
+    z-index: 4;
+    left: 320px;
+    top: 0;
+    width: 0;
 }
-.wyoming-slide5 {
+#ad_winter_slide {
+    overflow: hidden;
     z-index: 5;
+    left: 320px;
+    top: 0;
+    width: 0;
 }
-
+@keyframes slide_left {
+    0% {
+        left: 320px;
+        width: 0;
+    }
+    100% {
+        left: 0;
+        width: 320px;
+    }
+}
+@keyframes slide_right {
+    0% {
+        left: 0;
+        width: 320px;
+    }
+    100% {
+        left: 320px;
+        width: 0;
+    }
+}
+#ad_ski_slide.slide_left,
+#ad_lodges_slide.slide_left,
+#ad_accommodations_slide.slide_left,
+#ad_snowmobiling_slide.slide_left,
+#ad_winter_slide.slide_left {
+    animation: slide_left 1s forwards;
+}
+#ad_ski_slide.slide_right,
+#ad_lodges_slide.slide_right,
+#ad_accommodations_slide.slide_right,
+#ad_snowmobiling_slide.slide_right,
+#ad_winter_slide.slide_right {
+    animation: slide_right 1s forwards;
+}
+#ad_ski_slide.slide_show,
+#ad_lodges_slide.slide_show,
+#ad_accommodations_slide.slide_show,
+#ad_snowmobiling_slide.slide_show,
+#ad_winter_slide.slide_show {
+    display: block;
+}
 .wyoming-control {
     float: left;
     list-style-type: none;
     width: 160px;
     height: 600px;
-    background-color: rgba(0, 0, 255, .5);
+    margin-top: -10px;
 }
 .wyoming-button {
     list-style-type: none;
     width: 160px;
     height: 38px;
+    margin-bottom: 5px;
 }
+.ad-deals {
+    margin-top: 135px;
+}
+.ad-star {
+    width: 30px;
+    display: block;
+    position:relative;
+    z-index:999;
+    left:112px;
+    top: -10px;
+}
+
+.wyoming-menu {
+    float: left;
+    width: 160px;
+    height: 600px;
+    background-color: #5F5884;
+    z-index: 10;
+}
+
