@@ -1,3 +1,5 @@
+'use strict';
+
 (function() {
     var ad_button;
     var i;
@@ -17,7 +19,7 @@
     var ad_button_clicked = function (e) {
         var the_button;
         var the_slide;
-        var the_slider_string;
+        var the_slide_string;
         var the_elements;
 
         the_button = e.currentTarget.id;
